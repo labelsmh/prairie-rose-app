@@ -108,13 +108,16 @@ function App() {
           <p className="text-xs text-cream/40 px-2 mb-8 tracking-wide uppercase">Student Directory</p>
           <ul className="space-y-1.5">
             <li>
-              <a href="#" className="flex items-center p-3 text-sm font-medium text-cream/90 rounded-lg hover:bg-white/5 group">
+              <button
+                type="button"
+                className="flex items-center p-3 w-full text-sm font-medium text-cream/90 rounded-lg hover:bg-white/5 group"
+              >
                 <svg className="w-5 h-5 text-cream/40 group-hover:text-cream/70" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
                   <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
                 </svg>
                 <span className="ml-3">Overview</span>
-              </a>
+              </button>
             </li>
             <li>
               <button
