@@ -16,7 +16,7 @@ function App() {
   const [pagesOpen, setPagesOpen] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/students')
+    fetch('https://prairie-rose-app-production.up.railway.app/api/students')
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch students');
         return res.json();
@@ -65,7 +65,7 @@ function App() {
     setContactLoading(true);
     setContactDetail({type, loading: true});
     try {
-      const res = await fetch(`http://localhost:3001/api/${type}/${id}`);
+      const res = await fetch(`https://prairie-rose-app-production.up.railway.app/api/${type}/${id}`);
       const data = await res.json();
       setContactDetail({type, ...data});
     } catch (err) {
